@@ -29,9 +29,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex justify-between gap-2">
-          <Link to={"/http://instagram.com/capturecrew.films"}>
-            http://www.w3.org/2000/svg
-          </Link>
+          <Link to={"/http://instagram.com/capturecrew.films"}>IG</Link>
           <i></i>
           <button className="nav-button">Get in Touch</button>
         </div>

@@ -25,36 +25,87 @@ function ContactPage() {
           <div className="cart bg-white rounded-xl p-8 shadow-xl mb-6 md:m-4">
             <form action="">
               <div className="mb-3">
-                <label htmlFor="name">Name</label>
+                <label className="text-sm font-light" htmlFor="name">
+                  Name
+                </label>
                 <input
                   type="text"
                   placeholder="Enter Your Name:"
                   name="name"
+                  className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-black"
                   required
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="email">Email</label>
+                <label className="text-sm font-light" htmlFor="email">
+                  Email
+                </label>
                 <input
                   type="email"
                   placeholder="Enter Your Email:"
                   name="email"
+                  className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-black"
                   required
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="name">Phone</label>
+                <label className="text-sm font-light" htmlFor="name">
+                  Phone
+                </label>
                 <input
                   type="number"
                   placeholder="Enter Your Mobile No:"
                   name="phone"
+                  className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-black"
                   required
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="message">
+                <label className="text-sm font-light" htmlFor="message">
                   Tell us more about your wedding - event flow, venues.
                 </label>
+                <textarea
+                  name=""
+                  id=""
+                  rows={6}
+                  className="w-full border-2 rounded-md p-2 border-gray-300 focus:outline-none focus:border-black"
+                ></textarea>
+              </div>
+              <div className="mb-3">
+                <label htmlFor="cb"> What services are you looking for?</label>
+                <div>
+                  <label htmlFor="photography">
+                    <input
+                      type="checkbox"
+                      id="photography"
+                      value="photography"
+                      name="services"
+                    />
+                    Photography
+                  </label>
+                </div>
+                <div>
+                  <label htmlFor="films">
+                    <input
+                      type="checkbox"
+                      id="films"
+                      value="films"
+                      name="services"
+                    />
+                    Films
+                  </label>
+                </div>
+                <div>
+                  <label htmlFor="films-photography">
+                    <input
+                      type="checkbox"
+                      id="films-photography"
+                      value="both"
+                      name="services"
+                    />
+                    Films and Photography
+                  </label>
+                </div>
               </div>
             </form>
           </div>
